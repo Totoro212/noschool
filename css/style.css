@@ -1468,13 +1468,30 @@ input, textarea, select {
   }
 
   .footer-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 36px;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .footer-brand {
+    order: 1;
+    display: flex;
+    justify-content: center;
   }
 
   .footer-center {
-    grid-column: 1 / -1;
+    order: 2;
+    grid-column: auto;
+  }
+
+  .footer-right {
     order: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 4px;
   }
 }
 
@@ -1678,7 +1695,27 @@ input, textarea, select {
   .footer-container {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 28px;
+    gap: 24px;
+  }
+
+  .footer-brand {
+    order: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-center {
+    order: 2;
+  }
+
+  .footer-right {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 4px;
   }
 
   .footer-links {
@@ -1693,8 +1730,7 @@ input, textarea, select {
     gap: 10px;
   }
 
-  .footer-logo-link,
-  .footer-right {
+  .footer-logo-link {
     align-items: center;
     justify-content: center;
   }
