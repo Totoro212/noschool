@@ -1,6 +1,8 @@
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: sitemap.xml
+# Host
+Host: noschoolenglish.com
 
+# Sitemap
+Sitemap: https://noschoolenglish.com/sitemap.xml
